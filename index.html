@@ -3,19 +3,57 @@
   <head>
     <title>Brady Warford's Portfolio</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
   </head>
   <body>
     <div id="nav-placeholder"></div>
-    <h1>It Begins</h1> 
+    
+    <!-- first "section" - about me. two cols: text   pic -->
+    <div class="row m-3">
+      <div class="col-8">
+        <h3>About Me</h1> 
+          <p>
+            about me text
+            blah blah blah
+            blahbitty blah blah
+          </p>
+      </div>
+      <div class="col-4">
+        <img src="images/Profile_Pic_1.jpg" class="img-fluid" width="60%" height="60%"/>
+      </div>
+    </div>
+
+    <div class="row m-3"> 
+      <div class="col-4">
+        <img src="images/DnD_Pic.jpg" class="img-fluid" width="60%" height="60%"/>
+      </div>
+      <div class="col-8">
+        <h3>Hobbies</h1> 
+          <p>
+            about my hobbies text
+            blah blah blah DnD
+            blahbitty blah blah Games
+          </p>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center">
+      <div class="">
+          <h3>Conclusion</h3>
+          <p>
+            I like stuff or whatevs
+          </p>
+      </div>
+    </div>
     
 
-    
+
     <script>
       $(function(){
-        $("#nav-placeholder").load("navigation.html");
+        $("#nav-placeholder").load("navigation.html", function(){
+          $("#NavAbout").addClass("active").fadeIn("fast");
+        });
       });
     </script>
   </body>
