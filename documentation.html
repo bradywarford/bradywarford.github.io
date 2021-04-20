@@ -6,26 +6,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
   </head>
-  <body>
+  <body style="background-color: azure;">
     <div id="nav-placeholder"></div>
+    
+    <div class="container card mt-3" style="background-color: whitesmoke;" >
+      <div class="card-body">
+
     <h3>Documentation</h3> 
-    <p>This is a sample of some of the documentation I have made over the course of the program. Sequence and Class diagrams are made in Lucidchart priomarily, though I also have experience in Visio and Dia.<br />
-    I love to hand-draw  GUI mockups, so I have some of those mockups here to display. I have also used Balsamiq, though those diagrams lack the flair of hand-drawn ones!</p>
+    <p>This is a sample of some of the documentation I have made over the course of the program. Sequence and Class diagrams are made in Lucidchart primarily, though I also have experience in Visio and Dia.<br /><br />
+    I love to hand-draw  GUI mockups, so I have some of those mockups here to display. I have also used Balsamiq, though I feel those diagrams lack the flair of hand-drawn ones!</p>
     <h5>Click on the images for a closer look!</h5>
 
-    <img src="images/GUIMockups/AddSignGUI.jpg" class="col-2" data-toggle="modal" data-target="#exampleModal" title="test Title" data-description="Description is filled" />
+    <img src="images/GUIMockups/AddSignGUI.jpg" class="col-2" data-toggle="modal" data-target="#exampleModal" title="Adding Signs GUI Mockup" 
+    data-description="This is a mockup for a form used to add signs to the Prairie Forest Guide app. It shows fields, buttons,  and validation that we required" />
 
-    <img src="images/GUIMockups/FSAAI-App-NewsGUI.png" class="col-2" data-toggle="modal" data-target="#exampleModal" title="test Title" data-description="Description is filled" />
+    <img src="images/GUIMockups/FSAAI-App-NewsGUI.png" class="col-2" data-toggle="modal" data-target="#exampleModal" title="News and Events GUI Mockup" 
+    data-description="This is an initial mockup for the news and events page of the Prairie Forest Guide app. This feature was removed and added a few times, so the final product doesn't reflect this image anymore." />
 
-    <img src="images/GUIMockups/FSAAIVirtualSignsGUIMockup.png" class="col-2" data-toggle="modal" data-target="#exampleModal" title="test Title" data-description="Description is filled" />
+    <img src="images/GUIMockups/FSAAIVirtualSignsGUIMockup.png" class="col-2" data-toggle="modal" data-target="#exampleModal" title="Full App GUI Mockup" 
+    data-description="This is the very first, inital concept mockup for the Prairie Forest Guide app. We used this mockup in a client meeting to explain the areas and features we were focusing on, as well as get feedback on our direction." />
 
-    <img src="images/GUIMockups/s20_sequence_diagram.PNG" class="col-2" data-toggle="modal" data-target="#exampleModal" title="test Title" data-description="Description is filled" />
+    <img src="images/GUIMockups/s20_sequence_diagram.PNG" class="col-2" data-toggle="modal" data-target="#exampleModal" title="Editing and Deleting Sequence Diagram" 
+    data-description="This is a diagram made for a story dealing with Editing and Deleting in an ASP.Net Core MVC app. Me and a partner creates this diagram to show the flow of the Signview Controller as it got user input." />
 
-    <img src="images/GUIMockups/Story17BG-ClassDiagram.PNG" class="col-2" data-toggle="modal" data-target="#exampleModal" title="test Title" data-description="Description is filled" />
+    <img src="images/GUIMockups/Story17BG-ClassDiagram.PNG" class="col-2" data-toggle="modal" data-target="#exampleModal" title="SignView Controller Class Diagram" 
+    data-description="This is a class diagram me and a partner made to show the methods and parameters of the Sign model class and its interactivity with the SignView Controller" />
 
-    <img src="images/GUIMockups/story20-GUI_Mockup.png" class="col-2" data-toggle="modal" data-target="#exampleModal" title="test Title" data-description="Description is filled" />
+    <img src="images/GUIMockups/story20-GUI_Mockup.png" class="col-2" data-toggle="modal" data-target="#exampleModal" title="Sign List and Edit Form" 
+    data-description="This is a mockup of a List View created for the Prairie Forest Guide app, and an edit form for signs. You can see the final product of this mockup on the Projects page." />
 
-    
+    </div>
+    </div>
+
     <div class="modal fade" id="exampleModal" tabindex="-1" role="article" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg " role="document">
         <div class="modal-content h-100">
@@ -41,7 +53,6 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
