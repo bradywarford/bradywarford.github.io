@@ -17,7 +17,7 @@
       <div class="col-8">
         <h3>About Me</h1> 
           <p id="tester"></p>
-          <button onclick="()=>{document.getElementById('tester').innerText = testVar}"></button>
+          <button onclick="buttonClick">Click Me</button>
           <p>
             I am a graduate of the Computer Systems Technology 2-year diploma from Saskatchewan Polytechnic. I excel at problem solving and programming, luckily those skills go hand-in-hand! 
             Before my start at Saskpolytech, I always had a knack for logic and mathematics- I won the Fr. Albert Ruetz Mathematics Scholarship in 2013 for my grades in highschool. 
@@ -66,13 +66,19 @@
 
 
     <script>
+      let testVar = 5;
+
       $(function(){
-        let testVar = 5;
+        
         $("#nav-placeholder").load("navigation.html", function(){
           $("#NavAbout").addClass("active").fadeIn("fast");
           window.ReactNativeWebView.postMessage("Hello!");
         });
       });
+
+      function buttonClick() {
+        document.getElementById("tester").innerText = testVar;
+      }
     </script>
   </body>
  
