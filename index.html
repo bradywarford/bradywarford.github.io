@@ -67,6 +67,7 @@
       $(function(){
         $("#nav-placeholder").load("navigation.html", function(){
           $("#NavAbout").addClass("active").fadeIn("fast");
+          window.ReactNativeWebView.postMessage("Hello!");
         });
       });
     </script>
